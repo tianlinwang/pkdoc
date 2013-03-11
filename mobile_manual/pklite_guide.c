@@ -1,0 +1,12 @@
+\documentclass{book}
+\usepackage{graphicx,color}
+\begin{document}
+\pagestyle{headings}
+\input{title}
+\tableofcontents
+\input{overview}
+\input{getting_started}
+\input{data_entry}
+\input{report_chart}
+\input{tools}
+\end{document}

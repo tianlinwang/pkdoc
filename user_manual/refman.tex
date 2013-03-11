@@ -1,0 +1,176 @@
+\documentclass{book}
+\usepackage[letterpaper,top=2.5cm,bottom=2.5cm,left=2.5cm,right=2.5cm]{geometry}
+\usepackage{makeidx}
+\usepackage{natbib}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{float}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{ifthen}
+\usepackage[table]{xcolor}
+\usepackage{textcomp}
+\usepackage{alltt}
+\usepackage{ifpdf}
+\ifpdf
+\usepackage[pdftex,
+            pagebackref=true,
+            colorlinks=true,
+            linkcolor=blue,
+            unicode
+           ]{hyperref}
+\else
+\usepackage[ps2pdf,
+            pagebackref=true,
+            colorlinks=true,
+            linkcolor=blue,
+            unicode
+           ]{hyperref}
+\usepackage{pspicture}
+\fi
+\usepackage[utf8]{inputenc}
+\usepackage{mathptmx}
+\usepackage[scaled=.90]{helvet}
+\usepackage{courier}
+\usepackage{sectsty}
+\usepackage[titles]{tocloft}
+\usepackage{doxygen}
+\lstset{language=C,inputencoding=utf8,basicstyle=\footnotesize,breaklines=true,breakatwhitespace=true,tabsize=8,numbers=left }
+\makeindex
+\setcounter{tocdepth}{3}
+\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\familydefault}{\sfdefault}
+\hfuzz=15pt
+\setlength{\emergencystretch}{15pt}
+\hbadness=750
+\tolerance=750
+\begin{document}
+\hypersetup{pageanchor=false,citecolor=blue}
+\begin{titlepage}
+    \vspace*{1.0in}
+    \begin{flushright}
+    \includegraphics[width=5in]{../../pigknows_logo.png}
+          {\rule[.1in]{5.0in}{.02in}}\\[.25cm]
+          {\Huge\bf User's Manual}\footnote{
+            This document is the property of PigKnows LLC} \\[1in]
+          {Version 1.0} \\
+          {Nov.\ 2, 2012}
+    \end{flushright}
+\end{titlepage}
+\clearemptydoublepage
+\pagenumbering{roman}
+\tableofcontents
+\clearemptydoublepage
+\pagenumbering{arabic}
+\hypersetup{pageanchor=true,citecolor=blue}
+%
+% Introductio
+%
+\chapter{Introduction}
+\label{index}
+\hypertarget{index}{}
+\input{index}
+%
+% Getting Started
+%
+\chapter{Getting Started}
+\label{getting_started}
+\hypertarget{getting_started}{}
+\input{getting_started}
+%
+% Breeding Herd Reports
+%
+\chapter{Breeding Herd Reports}
+\label{breeding_herd_reports}
+\hypertarget{breeding_herd_reports}{}
+\input{breeding_herd_reports}
+%
+% Breeding Herd Charts
+%
+\chapter{Breeding Herd Charts}
+\label{breeding_herd_charts}
+\hypertarget{breeding_herd_charts}{}
+\input{breeding_herd_charts}
+%
+% Grpwer Herd Reports
+%
+\chapter{Grower Herd Reports}
+\label{grower_herd_reports}
+\hypertarget{grower_herd_reports}{}
+\input{grower_herd_reports}
+%
+% Nucleus Herd Reports
+%
+\chapter{Nucleus Herd Reports}
+\label{nucleus_herd_reports}
+\hypertarget{nucleus_herd_reports}{}
+\input{nucleus_herd_reports}
+%
+% Sales Reports
+%
+\chapter{Sales Reports}
+\label{sales_reports}
+\hypertarget{sales_reports}{}
+\input{sales_reports}
+%
+% Utility
+%
+\chapter{Utility}
+\label{utility}
+\hypertarget{utility}{}
+\input{utility}
+%
+% Data Extraction
+%
+\chapter{Data Extraction}
+\label{data_extract}
+\hypertarget{data_extract}{}
+\input{data_extract}
+%
+% Database
+%
+\chapter{Database}
+\label{database}
+\hypertarget{database}{}
+\input{database}
+%
+% Report Repository
+%
+\chapter{Report Repository}
+\label{report_repository}
+\hypertarget{report_repository}{}
+\input{report_repository}
+%
+% Benchmark
+%
+\chapter{Benchmark}
+\label{benchmark}
+\hypertarget{benchmark}{}
+\input{benchmark}
+%
+%Frequently Asked Questions
+%
+\chapter{Frequently Asked Questions}
+\label{faq}
+\hypertarget{faq}{}
+\input{faq}
+%
+% Troubleshooting
+%
+\chapter{Troubleshooting}
+\label{troubleshooting}
+\hypertarget{troubleshooting}{}
+\input{troubleshooting}
+%
+% Appendix
+%
+\chapter{Appendix}
+\label{appendix}
+\hypertarget{appendix}{}
+\input{appendix}
+
+\newpage \bibliographystyle{plain}
+\bibliography{pigknows}
+\addcontentsline{toc}{part}{Index}
+\printindex
+\end{document}

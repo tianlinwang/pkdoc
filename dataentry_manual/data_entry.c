@@ -1,0 +1,15 @@
+\documentclass{book}
+\usepackage{graphicx,color}
+\begin{document}
+\pagestyle{headings}
+\input{title}
+\tableofcontents
+\input{intro}
+\input{on-line}
+\input{batch}
+\input{ocr}
+\input{pklite}
+\input{userevent}
+\input{dictionary}
+\input{barn}
+\end{document}
